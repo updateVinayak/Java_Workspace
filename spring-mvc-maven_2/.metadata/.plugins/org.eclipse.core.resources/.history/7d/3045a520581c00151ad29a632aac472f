@@ -1,0 +1,9 @@
+package com.javaconf;
+
+public class CDPlayer {
+
+	public CDPlayer(CompactDisc compactDisc) {
+		// TODO Auto-generated constructor stub
+	}
+
+}

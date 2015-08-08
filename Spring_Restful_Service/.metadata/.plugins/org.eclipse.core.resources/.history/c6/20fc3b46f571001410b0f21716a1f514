@@ -1,0 +1,22 @@
+package com.rvm.services;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class UserServiceImpl implements IUserService {
+
+	@Override
+	public List<User> getAllUser() {
+		
+		User user1 = new User();
+		user1.setUserId(1);
+		user1.setFirstName("Vinayak");
+		user1.setLastName("Sawant");
+		
+		List<User> users = new ArrayList<>();
+		users.add(user1);
+		
+		return null;
+	}
+
+}

@@ -1,0 +1,23 @@
+package com.javaconfig.springjdbc;
+
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.annotation.AnnotationConfigApplicationContext;
+
+public class SpringTestJavaConfig {
+
+	
+	public static void main(String[] args) {
+		
+		ApplicationContext ctx = 
+				   new AnnotationConfigApplicationContext(JavaConfig.class);
+				   
+				   HelloWorld helloWorld = ctx.getBean(HelloWorld.class);
+
+				   helloWorld.setMessage("Hello World!");
+				   				   
+				   System.out.println(helloWorld.getMessage());
+				   
+				   ctx.getBean(CDPlayer.class).testMessage();
+		
+	}
+}

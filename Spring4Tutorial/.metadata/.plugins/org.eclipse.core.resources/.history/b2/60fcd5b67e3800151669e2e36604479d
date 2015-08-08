@@ -1,0 +1,32 @@
+package com.springHibernate.dao;
+
+import java.util.List;
+
+import org.hibernate.SessionFactory;
+
+import com.springHibernate.model.Person;
+
+public class PersonDAOImpl implements PersonDAO{
+
+	private SessionFactory sessionFactory;
+	
+	public SessionFactory getSessionFactory() {
+		return sessionFactory;
+	}
+
+	public void setSessionFactory(SessionFactory sessionFactory) {
+		this.sessionFactory = sessionFactory;
+	}
+
+	public void save(Person p) {
+		
+		
+		
+	}
+
+	public List<Person> list() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

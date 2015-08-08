@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Delete 4 resources" deleteContents="false" description="Delete 4 resources" element1="/RameshwarVikasMandal/WebContent/WEB-INF/lib/hibernate/hibernate-core-3.6.9.Final.jar" element2="/RameshwarVikasMandal/WebContent/WEB-INF/lib/hibernate/hibernate-entitymanager-3.6.9.Final.jar" element3="/RameshwarVikasMandal/WebContent/WEB-INF/lib/hibernate/javax.persistence.jar" element4="/RameshwarVikasMandal/WebContent/WEB-INF/lib/hibernate/spring-orm-4.0.3.RELEASE.jar" flags="7" id="org.eclipse.ltk.core.refactoring.delete.resources" resources="4" stamp="1416689847270"/>
+</session>

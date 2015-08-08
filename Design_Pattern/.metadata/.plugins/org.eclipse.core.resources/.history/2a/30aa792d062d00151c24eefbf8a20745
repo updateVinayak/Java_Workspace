@@ -1,0 +1,28 @@
+package com.computer.sell;
+
+public class OrangeBookProBuilder implements ComputerBuilder{
+
+	private Orange orange;
+	
+	
+	public void buildComputerMemory() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	public void buildComputerProcessor() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	public void buildComputerHarddisk() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	public Orange getOrangeComputer() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

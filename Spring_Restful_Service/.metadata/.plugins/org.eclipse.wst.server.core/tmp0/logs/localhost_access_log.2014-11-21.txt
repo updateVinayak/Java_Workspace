@@ -1,0 +1,11 @@
+127.0.0.1 - - [21/Nov/2014:21:15:28 -0600] "GET / HTTP/1.1" 404 951
+0:0:0:0:0:0:0:1 - - [21/Nov/2014:21:19:09 -0600] "GET /RameshwarVikasMandal/service/user/2 HTTP/1.1" 404 949
+0:0:0:0:0:0:0:1 - - [21/Nov/2014:21:19:09 -0600] "GET /favicon.ico HTTP/1.1" 404 973
+0:0:0:0:0:0:0:1 - - [21/Nov/2014:21:19:36 -0600] "GET /RameshwarVikasMandal/service/user HTTP/1.1" 404 949
+0:0:0:0:0:0:0:1 - - [21/Nov/2014:21:20:10 -0600] "GET /RameshwarVikasMandal/service/user/ HTTP/1.1" 200 98
+127.0.0.1 - - [21/Nov/2014:21:56:45 -0600] "GET / HTTP/1.1" 404 951
+0:0:0:0:0:0:0:1 - - [21/Nov/2014:21:56:55 -0600] "GET /RameshwarVikasMandal/service/user/ HTTP/1.1" 200 98
+0:0:0:0:0:0:0:1 - - [21/Nov/2014:21:56:59 -0600] "GET /RameshwarVikasMandal/service/user/ HTTP/1.1" 200 98
+127.0.0.1 - - [21/Nov/2014:21:57:37 -0600] "GET / HTTP/1.1" 404 951
+0:0:0:0:0:0:0:1 - - [21/Nov/2014:21:57:51 -0600] "GET /RameshwarVikasMandal/service/user/ HTTP/1.1" 200 119
+0:0:0:0:0:0:0:1 - - [21/Nov/2014:21:57:51 -0600] "GET /favicon.ico HTTP/1.1" 404 973

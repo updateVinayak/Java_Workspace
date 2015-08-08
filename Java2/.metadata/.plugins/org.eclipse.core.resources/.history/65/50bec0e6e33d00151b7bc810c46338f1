@@ -1,0 +1,11 @@
+package com.basicJava;
+
+public interface IService {
+	
+	String name;
+	
+	String getName();
+	
+	String getAge();
+
+}

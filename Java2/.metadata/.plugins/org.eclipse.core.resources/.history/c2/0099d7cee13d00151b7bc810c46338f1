@@ -1,0 +1,5 @@
+package com.basicJava;
+
+public class ServiceImpl implements IService {
+
+}

@@ -1,0 +1,9 @@
+package AbstarctClass;
+
+public abstract class AbstractClass {
+	
+	public String getName();
+	
+	public String getAge();
+
+}

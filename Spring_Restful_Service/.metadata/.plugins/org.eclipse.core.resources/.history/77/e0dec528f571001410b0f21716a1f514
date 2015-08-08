@@ -1,0 +1,13 @@
+package com.rvm.services;
+
+import java.util.List;
+
+public class UserServiceImpl implements IUserService {
+
+	@Override
+	public List<User> getAllUser() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

@@ -1,0 +1,25 @@
+package com.javaconf;
+
+import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.Configuration;
+
+@Configuration
+public class JavaConfig {
+
+	@Bean
+	public HelloWorld helloWorld() {
+		return new HelloWorld();
+	}
+
+	@Bean(name="lonelyHeartsClubBand")
+	public CDPlayer compactDisc() {
+		return new CDPlayer();
+	}
+	
+	
+	@Bean
+	public CDPlayer cdPlayer(CompactDisc compactDisc) {
+		return new CDPlayer(compactDisc);
+	}
+
+}

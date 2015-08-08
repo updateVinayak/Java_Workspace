@@ -1,0 +1,5 @@
+package com.rvm.services;
+
+public class User {
+
+}

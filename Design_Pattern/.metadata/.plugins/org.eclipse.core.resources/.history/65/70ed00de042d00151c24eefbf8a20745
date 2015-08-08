@@ -1,0 +1,12 @@
+package com.computer.sell;
+
+public interface Orange {
+
+	public void setMemory(String memory);
+	
+	public void setMemory(String memory);
+	
+	public void setMemory(String memory);
+	
+	
+}

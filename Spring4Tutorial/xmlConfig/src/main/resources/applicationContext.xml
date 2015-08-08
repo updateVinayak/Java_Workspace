@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:p="http://www.springframework.org/schema/p"
+	xmlns:aop="http://www.springframework.org/schema/aop" xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:jee="http://www.springframework.org/schema/jee" xmlns:tx="http://www.springframework.org/schema/tx"
+	xmlns:task="http://www.springframework.org/schema/task"
+	xsi:schemaLocation="http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop-3.2.xsd http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.2.xsd http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-3.2.xsd http://www.springframework.org/schema/jee http://www.springframework.org/schema/jee/spring-jee-3.2.xsd http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx-3.2.xsd http://www.springframework.org/schema/task http://www.springframework.org/schema/task/spring-task-3.2.xsd">
+
+	<context:component-scan base-package="com.spring4.learning" />
+
+	<bean id="helloWorldService" class="com.spring4.learning.HelloWorldService">
+		<property name="name" value="Program Creek Readers" />
+	</bean>
+
+
+	<bean id="constructorSimpleExample" class="com.spring4.learning.ConstructorSimpleExample">
+		<constructor-arg value="Vinayak" />
+	</bean>
+
+	<bean id="refereringBean" class="com.spring4.learning.RefereringBean">
+		<property name="hello" ref="helloWorldService" />
+	</bean>
+
+
+	<bean id="exampleBean" class="com.spring4.learning.ExampleBean">
+		<constructor-arg name="years" value="7500000" />
+		<constructor-arg name="ultimateAnswer" value="42" />
+	</bean>
+
+
+	<!-- <bean id="outer" class="...">
+		instead of using a reference to a target bean, simply define the target 
+			bean inline
+		<property name="target">
+			<bean class="com.example.Person"> this is the inner bean
+				<property name="name" value="Fiona Apple" />
+				<property name="age" value="25" />
+			</bean>
+		</property>
+	</bean> -->
+
+
+	<bean id="moreComplexObject" class="com.spring4.learning.ComplexObject">
+		<!-- results in a setAdminEmails(java.util.Properties) call -->
+		<property name="adminEmails">
+			<props>
+				<prop key="administrator">administrator@example.org</prop>
+				<prop key="support">support@example.org</prop>
+				<prop key="development">development@example.org</prop>
+			</props>
+		</property>
+		<!-- results in a setSomeList(java.util.List) call -->
+		<property name="someList">
+			<list>
+				<value>a list element followed by a reference</value>
+				<value>a list element followed by a reference 11</value>
+			</list>
+		</property>
+		<!-- results in a setSomeMap(java.util.Map) call -->
+		<property name="someMap">
+			<map>
+				<entry key="an entry" value="just some string" />
+				<entry key="a ref" value-ref="refereringBean" />
+			</map>
+		</property>
+		<!-- results in a setSomeSet(java.util.Set) call -->
+		<property name="someSet">
+			<set>
+				<value>just some string</value>
+				<ref bean="refereringBean" />
+			</set>
+		</property>
+	</bean>
+
+	<bean id="child" parent="moreComplexObject">        
+        <property name="someList">
+			<list merge="true">
+				<value>a list element followed by a reference 22</value>
+				<value>a list element followed by a reference 33</value>
+			</list>
+		</property>
+    </bean>
+
+
+
+
+	<bean id="userAccountService" autowire="byName"  class="com.javacodegeeks.areyes1.beans.UserAccountService" />
+
+</beans>
+	

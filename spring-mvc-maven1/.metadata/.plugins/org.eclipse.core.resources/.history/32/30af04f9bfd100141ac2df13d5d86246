@@ -1,0 +1,32 @@
+package com.concretepage;
+
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.RestController;
+
+@RestController
+@RequestMapping("/User")
+public class UserController {
+
+	
+	@RequestMapping("")
+	public User getUserDetail(@RequestParam(value = "id",required = false,
+	                                                    defaultValue = "0") Integer id) {
+		//Person p = personService.getPersonDetail(id);
+		System.out.println("Get");
+		return new User();
+	}
+	
+	@RequestMapping(value="register", method = RequestMethod.POST)	
+	public int registerUser(@RequestBody User user) {
+		
+		
+		System.out.println(user);
+		
+		return 0;
+		
+	}
+	
+}

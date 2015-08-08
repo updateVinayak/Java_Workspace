@@ -1,0 +1,5 @@
+package com.rvm.dao;
+
+public class UserDAO {
+
+}

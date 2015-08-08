@@ -1,0 +1,11 @@
+package com.splunkTest.test;
+
+public class TestSplunk {
+	
+	public static void main(String[] args) {
+		
+		
+		System.out.println("JI");
+	}
+
+}

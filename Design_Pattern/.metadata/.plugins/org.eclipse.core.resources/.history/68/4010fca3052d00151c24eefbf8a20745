@@ -1,0 +1,12 @@
+package com.computer.sell;
+
+public interface ComputerBuilder {
+	
+	public void setComputerMemory();
+	
+	
+	public void setComputerProcessor();
+	
+	public void setComputerHarddisk();
+
+}

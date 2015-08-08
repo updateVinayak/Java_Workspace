@@ -1,0 +1,21 @@
+package com.basicJava;
+
+public class MainClass {
+	
+	public static void main(String[] args) {
+		/*
+		IService service1 = new ServiceImpl();
+		
+		System.out.println(service1.getName());
+		
+		IService service2 = new ServiceImpl2();
+		
+		System.out.println(service2.getName());
+		*/
+		
+		
+		IService service = null;
+		
+	}
+
+}

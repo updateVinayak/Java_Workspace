@@ -1,0 +1,19 @@
+1436320234670	Rename type 'User'
+1436402762994	Rename compilation unit 'UserId.java'
+1436408655783	Rename type 'Address'
+1436491666405	Rename type 'Address'
+1436491712236	Rename type 'AddressCoolectionOption1'
+1436493520254	Rename type 'AddressCollectionOption1'
+1436493556709	Rename type 'UserCollectionOption1'
+1436574143073	Delete elements
+1436590134306	Rename type 'TestHobernate'
+1436646247245	Rename type 'AddressOneToOne'
+1436647369369	Rename type 'VahicleOneToOne'
+1436648897151	Copy compilation unit
+1436648937053	Rename type 'UserOneToOne'
+1436649112479	Copy compilation unit
+1436649830121	Rename package 'com.association.onetomany'
+1436657965964	Copy compilation unit
+1436659141289	Copy compilation units
+1436659152547	Rename type 'UserOneToMany'
+1436659158835	Rename type 'VehicleOneToMany'

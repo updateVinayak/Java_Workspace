@@ -1,0 +1,12 @@
+package com.spring.autowired;
+
+public class TestAutoWired {
+	
+	public static void main(String[] args) {
+		
+		AbstractApplicationContext context = new AnnotationConfigApplicationContext(
+				JavaAutoWiredConfid.class);
+		
+	}
+
+}

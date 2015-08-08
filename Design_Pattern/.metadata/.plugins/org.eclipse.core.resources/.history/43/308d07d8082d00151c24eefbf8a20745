@@ -1,0 +1,29 @@
+package com.computer.sell;
+
+public class OrangeBookProBuilder implements ComputerBuilder{
+
+	private OrangeBookPro orange;
+	
+	public OrangeBookProBuilder(){
+		this.orange = new OrangeBookPro();
+	}
+	
+	public void buildComputerMemory() {
+		
+		this.orange.setHardDisk("MacBookPro Memmry");		
+	}
+
+	public void buildComputerProcessor() {		
+		this.orange.setHardDisk("MacBookPro Processor");		
+	}
+
+	public void buildComputerHarddisk() {
+		this.orange.setHardDisk("MacBookPro HardDisk");		
+	}
+
+	public Orange getOrangeComputer() {
+		
+		return this.orange;
+	}
+
+}

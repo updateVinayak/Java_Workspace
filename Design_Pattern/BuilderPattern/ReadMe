@@ -1,0 +1,2 @@
+--- Use this pattern in order to create complex object that is independent of the parts that makes up that object and how those parts are created.
+--- When this pattern is used, complex object is constructed step-by-step, where as other creational patterns like the factory pattern where objects are created in one single step  

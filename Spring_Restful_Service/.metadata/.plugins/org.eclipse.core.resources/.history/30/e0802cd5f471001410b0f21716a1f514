@@ -1,0 +1,10 @@
+package com.rvm.services;
+
+import java.util.List;
+
+import java.;
+
+public interface IUserService {
+
+	public List<User> getAllUser();
+}

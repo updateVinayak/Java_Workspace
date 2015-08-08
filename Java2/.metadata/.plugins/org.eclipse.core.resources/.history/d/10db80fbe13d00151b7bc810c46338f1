@@ -1,0 +1,5 @@
+package AbstarctClass;
+
+public abstract class AbstractClass {
+
+}

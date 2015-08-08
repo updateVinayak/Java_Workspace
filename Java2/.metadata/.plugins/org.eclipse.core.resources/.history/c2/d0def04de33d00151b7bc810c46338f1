@@ -1,0 +1,13 @@
+package com.basicJava;
+
+public class MainClass {
+	
+	public static void main(String[] args) {
+		
+		IService service1 = new ServiceImpl();
+		
+		IService service2 = new ServiceImpl2();
+		
+	}
+
+}

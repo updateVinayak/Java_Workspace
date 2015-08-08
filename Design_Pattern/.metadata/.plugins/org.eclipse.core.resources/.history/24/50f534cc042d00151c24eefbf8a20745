@@ -1,0 +1,12 @@
+package com.computer.sell;
+
+public interface Orange {
+
+	private String hardDisk;
+	
+	private String monitor;
+	
+	private String processor;
+	
+	
+}

@@ -1,0 +1,12 @@
+package AbstarctClass;
+
+public class AbstractClassImpl extends AbstractClass{
+
+	public String getAge() {
+		
+		
+		
+		return "33";
+	}
+
+}

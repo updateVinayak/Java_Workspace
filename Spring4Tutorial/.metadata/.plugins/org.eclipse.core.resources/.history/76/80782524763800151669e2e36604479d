@@ -1,0 +1,9 @@
+package com.springHibernate.dao;
+
+public interface PersonDAO {
+
+	public void save(Person p);
+    
+    public List<Person> list();
+	
+}

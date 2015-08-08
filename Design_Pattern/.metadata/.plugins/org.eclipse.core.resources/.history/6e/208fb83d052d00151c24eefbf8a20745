@@ -1,0 +1,31 @@
+package com.computer.sell;
+
+public class OrangeBookPro implements Orange {
+
+	private String memory;
+	
+	private String hardDisk;
+	
+	private String procesor;
+	
+	
+	public void setMemory(String memory) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	
+	
+	public void setHardDisk(String hardDisk) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	public void setProcesor(String processor) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	
+	
+}

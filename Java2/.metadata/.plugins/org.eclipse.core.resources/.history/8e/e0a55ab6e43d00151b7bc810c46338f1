@@ -1,0 +1,5 @@
+package com.basicJava;
+
+public interface IService2 {
+
+}

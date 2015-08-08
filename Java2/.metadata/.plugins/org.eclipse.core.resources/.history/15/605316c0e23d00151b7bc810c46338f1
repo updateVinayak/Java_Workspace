@@ -1,0 +1,12 @@
+package AbstarctClass;
+
+public class MainClass {
+
+	
+	public static void main(String[] args) {
+		
+		AbstractClass sbc = new AbstractClassImpl();
+		sbc.getName();
+		
+	}
+}

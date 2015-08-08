@@ -1,0 +1,29 @@
+package com.javaconf;
+
+public class CDPlayer {
+
+	private CompactDisc compactDisc;
+	
+	
+	
+	public CompactDisc getCompactDisc() {
+		return compactDisc;
+	}
+
+
+
+	public void setCompactDisc(CompactDisc compactDisc) {
+		this.compactDisc = compactDisc;
+	}
+
+
+	public void testMessage(){
+		compactDisc.printMessage();
+	}
+	
+
+	public CDPlayer(CompactDisc compactDisc) {
+		compactDisc = compactDisc;
+	}
+
+}

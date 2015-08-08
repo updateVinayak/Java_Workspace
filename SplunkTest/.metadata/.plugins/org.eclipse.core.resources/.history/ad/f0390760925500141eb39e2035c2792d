@@ -1,0 +1,25 @@
+package com.splunkTest.test;
+
+import java.util.HashMap;
+import java.util.Map;
+
+import com.splunk.Service;
+
+public class TestSplunk {
+	
+	public static void main(String[] args) {
+		
+		
+		System.out.println("JI");
+		
+		Map<String, Object> connectionArg = new HashMap<String, Object>();
+		connectionArg.put("host", "SplunkLocal");
+		connectionArg.put("username", "admin");
+		connectionArg.put("password", "India3380");
+		connectionArg.put("port", 8089);
+		
+		Service service = Service.connect(connectionArg);
+		System.out.println(service.getToken());
+	}
+
+}

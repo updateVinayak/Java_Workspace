@@ -1,0 +1,19 @@
+package com.springHibernate.dao;
+
+import java.util.List;
+
+import com.springHibernate.model.Person;
+
+public class PersonDAOImpl implements PersonDAO{
+
+	public void save(Person p) {
+		
+		
+	}
+
+	public List<Person> list() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

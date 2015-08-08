@@ -1,0 +1,8 @@
+package com.spring4.config;
+
+@Configuration
+@EnableTransactionManagement
+
+public class AppConfig {
+
+}

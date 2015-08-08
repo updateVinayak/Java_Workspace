@@ -1,0 +1,13 @@
+package com.springjdbc;
+
+public class SpringMain {
+
+	public static void main(String[] args) {
+		ClassPathXmlApplicationContext ctx = new ClassPathXmlApplicationContext("spring.xml");
+        
+        //Get the EmployeeDAO Bean
+        EmployeeDAO employeeDAO = ctx.getBean("employeeDAO", EmployeeDAO.class);
+         
+	}
+	
+}

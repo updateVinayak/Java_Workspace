@@ -1,0 +1,5 @@
+package com.springHibernate.model;
+
+public class Person {
+
+}

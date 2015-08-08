@@ -1,0 +1,21 @@
+package com.soundsystem;
+
+import org.springframework.context.annotation.AnnotationConfigApplicationContext;
+import org.springframework.context.support.AbstractApplicationContext;
+
+import com.configuration.AppConfig;
+
+public class TestMusicPlayer {
+	
+	public static void main(String[] args) {
+		AbstractApplicationContext  context = new AnnotationConfigApplicationContext(AppConfig.class);
+		CompactDisc cd = (CompactDisc)context.getBean("lonelyHeartsClub");
+		cd.play();
+		
+		DiskPlayer player = (DiskPlayer)context.getBean("diskPlayer");
+		player.playWonderfullSong();
+		
+		context.close();
+	}
+
+}

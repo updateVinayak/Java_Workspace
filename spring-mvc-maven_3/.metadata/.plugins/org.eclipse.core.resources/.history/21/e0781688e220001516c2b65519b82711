@@ -1,0 +1,7 @@
+package com.javaconfig.springjdbc;
+
+import com.springjdbc.EmployeeDAO;
+
+public class EmployeeDAOJavaConfigImpl implements EmployeeDAO{
+
+}

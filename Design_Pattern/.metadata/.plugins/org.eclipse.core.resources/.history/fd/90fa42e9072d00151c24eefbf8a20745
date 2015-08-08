@@ -1,0 +1,12 @@
+package com.computer.sell;
+
+public class TestComputerBuilder {
+
+	public static void main(String[] args) {
+		
+		OrangeBookProBuilder bookProBuilder =  new OrangeBookProBuilder();
+		
+		
+	}
+	
+}

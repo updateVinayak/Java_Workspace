@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+<fullyQualifiedTypeName name="com.spring4.learning.ConstructorSimpleExample"/>
+<fullyQualifiedTypeName name="com.spring4.learning.ExampleBean"/>
+<fullyQualifiedTypeName name="com.spring4.learning.HelloWorldService"/>
+<fullyQualifiedTypeName name="com.spring4.learning.RefereringBean"/>
+<fullyQualifiedTypeName name="com.spring4.learning.ComplexObject"/>
+<fullyQualifiedTypeName name="com.spring4.annoation.EmployeeService"/>
+<fullyQualifiedTypeName name="com.spring4.annoation.EmployeeController"/>
+<fullyQualifiedTypeName name="java.util.jar.Attributes.Name"/>
+<fullyQualifiedTypeName name="com.spring4.annoation.DepartmentService"/>
+<fullyQualifiedTypeName name="org.springframework.beans.factory.annotation.Qualifier"/>
+<fullyQualifiedTypeName name="com.spring4.java.UserService"/>
+<fullyQualifiedTypeName name="com.spring4.java.AppConfig"/>
+<fullyQualifiedTypeName name="com.spring4.java.UserController"/>
+<fullyQualifiedTypeName name="org.springframework.context.annotation.Scope"/>
+<fullyQualifiedTypeName name="org.aspectj.lang.annotation.Aspect"/>
+<fullyQualifiedTypeName name="org.springframework.context.annotation.EnableAspectJAutoProxy"/>
+<fullyQualifiedTypeName name="com.spring4.aop.EmployeeManager"/>
+<fullyQualifiedTypeName name="com.spring4.aop.EmployeeDTO"/>
+<fullyQualifiedTypeName name="org.aspectj.lang.annotation.Pointcut"/>
+<fullyQualifiedTypeName name="org.aspectj.lang.annotation.Before"/>
+<fullyQualifiedTypeName name="com.spring4.aopExample.UserService"/>
+<fullyQualifiedTypeName name="org.hibernate.classic.Session"/>
+<fullyQualifiedTypeName name="org.hibernate.Transaction"/>
+<fullyQualifiedTypeName name="javax.persistence.Entity"/>
+<fullyQualifiedTypeName name="com.springHibernate.dao.PersonDAO"/>
+<fullyQualifiedTypeName name="org.springframework.beans.factory.annotation.Autowired"/>
+<fullyQualifiedTypeName name="com.springHibernate.model.Person"/>
+<fullyQualifiedTypeName name="org.springframework.stereotype.Component"/>
+<fullyQualifiedTypeName name="java.util.List"/>
+<fullyQualifiedTypeName name="org.springframework.context.annotation.Configuration"/>
+<fullyQualifiedTypeName name="org.springframework.context.annotation.ComponentScan"/>
+<fullyQualifiedTypeName name="org.hibernate.SessionFactory"/>
+<fullyQualifiedTypeName name="org.springframework.orm.hibernate3.annotation.AnnotationSessionFactoryBean"/>
+<fullyQualifiedTypeName name="org.springframework.orm.hibernate3.LocalSessionFactoryBean"/>
+<fullyQualifiedTypeName name="org.apache.commons.dbcp.BasicDataSource"/>
+<fullyQualifiedTypeName name="java.lang.String"/>
+<fullyQualifiedTypeName name="java.util.Properties"/>
+<fullyQualifiedTypeName name="com.springHibernate.config.AppConfig"/>
+<fullyQualifiedTypeName name="org.springframework.context.annotation.Bean"/>
+<fullyQualifiedTypeName name="com.springHibernate.dao.PersonDAOImpl2"/>
+<fullyQualifiedTypeName name="com.springHibernate.dao.PersonDAOImpl"/>
+<fullyQualifiedTypeName name="com.springHibernate.service.PersonService"/>
+<fullyQualifiedTypeName name="org.springframework.context.annotation.Profile"/>
+</qualifiedTypeNameHistroy>

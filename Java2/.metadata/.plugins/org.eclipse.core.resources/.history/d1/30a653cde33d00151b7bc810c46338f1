@@ -1,0 +1,10 @@
+package AbstarctClass;
+
+public class AbstractClassImpl extends AbstractClass{
+
+	
+
+	public static void main(String[] args) {
+		
+	}
+}

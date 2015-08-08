@@ -1,0 +1,8 @@
+package com.rvm.controller;
+
+
+@RestController
+@RequestMapping("/service/user/")
+public class UserController {
+
+}

@@ -1,0 +1,7 @@
+package com.basicJava;
+
+public interface IService2 {
+	
+	String getAddress();
+
+}

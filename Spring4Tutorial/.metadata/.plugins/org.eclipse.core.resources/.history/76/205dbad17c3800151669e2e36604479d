@@ -1,0 +1,9 @@
+package com.springHibernate.main;
+
+public class SpringHibernateMain {
+
+	public static void main(String[] args) {
+		
+	}
+	
+}

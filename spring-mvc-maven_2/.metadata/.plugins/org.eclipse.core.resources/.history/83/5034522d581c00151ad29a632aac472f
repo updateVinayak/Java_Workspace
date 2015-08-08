@@ -1,0 +1,11 @@
+package com.javaconf;
+
+public class CDPlayer {
+
+	private CompactDisc compactDisc;
+	
+	public CDPlayer(CompactDisc compactDisc) {
+		
+	}
+
+}

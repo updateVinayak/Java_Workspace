@@ -1,0 +1,11 @@
+package com.computer.sell;
+
+public class OrangeBookPro implements Orange {
+
+	
+	private String hardDisk;
+	
+	private String monitor;
+	
+	private String processor;
+}

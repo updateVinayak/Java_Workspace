@@ -1,0 +1,5 @@
+package com.springHibernate.dao;
+
+public interface PersonDAO {
+
+}

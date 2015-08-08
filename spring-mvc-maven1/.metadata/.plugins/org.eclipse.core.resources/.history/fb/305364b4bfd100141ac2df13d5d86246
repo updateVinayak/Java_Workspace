@@ -1,0 +1,10 @@
+package com.concretepage;
+
+public class User {
+	private int id;
+	private String location;
+	private String firstName;
+	private String lastName;
+	private User parentId;
+	
+}

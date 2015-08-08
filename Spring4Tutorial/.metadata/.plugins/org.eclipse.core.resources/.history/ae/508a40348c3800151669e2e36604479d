@@ -1,0 +1,18 @@
+package com.springHibernate.service;
+
+import org.springframework.beans.factory.annotation.Autowired;
+
+import com.springHibernate.dao.PersonDAO;
+
+public class PersonSerrvice {
+
+	@Autowired
+	private PersonDAO personDAO;
+	
+	
+	public void savePerson(){
+		
+	}
+	
+	
+}

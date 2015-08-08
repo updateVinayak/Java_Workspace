@@ -1,0 +1,6 @@
+package com.rvm.services;
+
+public interface IUserService {
+
+	public List<User> getAllUser();
+}

@@ -1,0 +1,16 @@
+package com.rvm.controller;
+
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+import com.rvm.services.IUserService;
+import com.rvm.services.UserServiceImpl;
+
+
+@RestController
+@RequestMapping("/service/user/")
+public class UserController {
+
+	IUserService userService  = new UserServiceImpl();
+	
+}

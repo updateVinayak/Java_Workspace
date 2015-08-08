@@ -1,0 +1,9 @@
+package com.springHibernate.service;
+
+import com.springHibernate.dao.PersonDAO;
+
+public class PersonSerrvice {
+
+	private PersonDAO personDAO;
+	
+}
