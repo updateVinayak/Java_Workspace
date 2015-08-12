@@ -1,0 +1,14 @@
+package com.myHealth.dao;
+
+import java.util.List;
+
+import com.myHealth.model.data.UserDetailsDO;
+
+public class UserDAOImpl implements IUserDAO {
+
+	public List<UserDetailsDO> getAllUsers() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

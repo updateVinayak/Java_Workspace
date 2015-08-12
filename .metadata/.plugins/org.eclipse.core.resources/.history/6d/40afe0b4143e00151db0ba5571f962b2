@@ -1,0 +1,9 @@
+package com.spring4.rest;
+
+import org.springframework.web.bind.annotation.RestController;
+
+@RestController
+@RequestMapping("/data")
+public class PersonController {
+
+}

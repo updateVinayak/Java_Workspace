@@ -1,0 +1,27 @@
+package com.myHealth.service;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import com.myHealth.model.UserDetails;
+
+public class UserServiceImpl implements IUserService{
+
+	public List<UserDetails> getAllUser() {
+		
+		List<UserDetails> users = new ArrayList<UserDetails>();
+		
+		UserDetails userDetails = new UserDetails();
+		
+		userDetails.setUserId(1);
+		userDetails.setFirstName("Vinayak");
+		userDetails.setLastName("Sawant");
+		userDetails.setEmail("optimistvinay@gmail.com");
+		
+		users.add(userDetails);
+		
+		return users;
+		
+	}
+
+}

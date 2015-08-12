@@ -1,0 +1,5 @@
+package com.spring4.rest.controller;
+
+public class HelloWorldController {
+
+}

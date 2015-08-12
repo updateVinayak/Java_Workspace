@@ -1,0 +1,17 @@
+package com.myHealth.model;
+
+public class UserDetails {
+	
+	private int userId;
+	
+	private String firstName;
+	
+	private String lastName;
+	
+	private String email;
+	
+	private int parentId;
+	
+	
+
+}

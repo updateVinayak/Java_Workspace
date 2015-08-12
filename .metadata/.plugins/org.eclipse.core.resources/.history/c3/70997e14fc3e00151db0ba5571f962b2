@@ -1,0 +1,15 @@
+package com.myHealth.service;
+
+import java.util.List;
+
+import org.springframework.http.ResponseEntity;
+
+import com.myHealth.model.UserDetails;
+
+public interface IUserService {
+
+	
+	public List<UserDetails> getAllUser();
+
+	public List<UserDetails> getUserById(int id);
+}

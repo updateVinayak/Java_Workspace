@@ -1,0 +1,15 @@
+package com.myHealth.model.data;
+
+public class DoctorDetails {
+	
+	private Integer doctorId;
+	
+	private UserDetails user;
+	
+	private AddressDetails homeAddress;
+	
+	private String degree;
+	
+	private AddressDetails clinicAddress;
+
+}

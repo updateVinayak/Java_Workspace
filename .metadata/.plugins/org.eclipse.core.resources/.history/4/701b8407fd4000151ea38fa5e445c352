@@ -1,0 +1,5 @@
+package com.myHealth.dao;
+
+public interface IUserDAO {
+
+}

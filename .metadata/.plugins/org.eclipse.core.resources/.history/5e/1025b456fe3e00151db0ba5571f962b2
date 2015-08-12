@@ -1,0 +1,28 @@
+package com.myHealth.model.exception;
+
+public class MyHealthException extends Exception {
+	
+
+	
+	private String message = null;
+	 
+    public MyHealthException() {
+        super();
+    }
+ 
+    public MyHealthException(String message) {
+        super(message);
+        this.message = message;
+    }
+ 
+    public MyHealthException(Throwable cause) {
+        super(cause);
+    }
+ 
+    @Override
+    public String toString() {
+        return message;
+    }
+- See more at: http://www.java2novice.com/java_exception_handling_examples/create_custom_exception/#sthash.iK3ijmXI.dpuf
+
+}

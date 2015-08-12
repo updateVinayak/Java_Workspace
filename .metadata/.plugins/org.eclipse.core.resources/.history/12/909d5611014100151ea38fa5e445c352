@@ -1,0 +1,44 @@
+package com.myHealth.dao;
+
+import java.util.List;
+
+import org.hibernate.Session;
+import org.hibernate.SessionFactory;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Repository;
+
+import com.myHealth.model.data.Person;
+import com.myHealth.model.data.UserDetailsDO;
+
+
+@Repository
+public class UserDAOImpl implements IUserDAO {
+
+	@Autowired
+	private SessionFactory sessionFactory;
+
+	public SessionFactory getSessionFactory() {
+		return sessionFactory;
+	}
+
+	public void setSessionFactory(SessionFactory sessionFactory) {
+		this.sessionFactory = sessionFactory;
+	}
+
+	public List<UserDetailsDO> getAllUsers() {
+		
+		
+		Session session1 =  sessionFactory.openSession();
+		
+		/*List<Person> personList = session1.createQuery("from Person").list();
+        System.out.println("personList : " + personList);
+        session1.close();*/
+		
+		UserDetailsDO user =  (UserDetailsDO)session1.get(UserDetailsDO.class, "1");
+		
+		Session session =  sessionFactory.openSession();
+		return session.createCriteria(UserDetailsDO.class).list();
+		
+	}
+
+}

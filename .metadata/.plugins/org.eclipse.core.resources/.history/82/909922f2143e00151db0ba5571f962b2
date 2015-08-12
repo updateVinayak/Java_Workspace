@@ -1,0 +1,8 @@
+package com.spring4.rest;
+
+@Configuration 
+@ComponentScan("com.concretepage") 
+@EnableWebMvc
+public class AppConfig {
+
+}

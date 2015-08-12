@@ -1,0 +1,5 @@
+package com.myHealth.config;
+
+public class AppConfig {
+
+}

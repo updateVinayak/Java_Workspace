@@ -1,0 +1,5 @@
+package com.myHealth.model.exception;
+
+public class Error {
+
+}

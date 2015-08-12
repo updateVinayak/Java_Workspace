@@ -1,0 +1,11 @@
+package com.myHealth.dao;
+
+import java.util.List;
+
+import com.myHealth.model.data.UserDetailsDO;
+
+public interface IUserDAO {
+	
+	public List<UserDetailsDO> getAllUsers();
+
+}

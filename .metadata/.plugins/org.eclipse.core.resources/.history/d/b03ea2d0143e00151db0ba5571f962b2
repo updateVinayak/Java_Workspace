@@ -1,0 +1,5 @@
+package com.spring4.rest;
+
+public class WebAppInitializer implements WebApplicationInitializer {
+
+}

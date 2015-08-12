@@ -1,0 +1,62 @@
+package com.myHealth.dao;
+
+import java.util.Collection;
+import java.util.List;
+
+import org.hibernate.Session;
+import org.hibernate.SessionFactory;
+import org.hibernate.Transaction;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Repository;
+
+import com.myHealth.model.data.UserDetails;
+
+
+@Repository
+public class UserDAOImpl implements IUserDAO {
+
+	@Autowired
+	private SessionFactory sessionFactory;
+
+	public SessionFactory getSessionFactory() {
+		return sessionFactory;
+	}
+
+	public void setSessionFactory(SessionFactory sessionFactory) {
+		this.sessionFactory = sessionFactory;
+	}
+
+	public List<UserDetails> getAllUsers() {
+		
+		Session session =  sessionFactory.openSession();
+		session.beginTransaction();
+		Collection<UserDetails> users =  session.createCriteria(UserDetails.class).list();
+		
+		
+		session.getTransaction().commit();
+        session.close();
+		
+		return (List<UserDetails>)users;
+	}
+
+	public Integer saveUser(UserDetails user) {
+		Session session =  sessionFactory.openSession();
+		Transaction tx = session.beginTransaction();
+		Integer userId = (Integer)session.save(user);
+		tx.commit();
+		session.close();
+		return userId;
+	}
+
+	public UserDetails getUser(Integer id) {
+		
+		Session session =  sessionFactory.openSession();
+		Transaction tx = session.beginTransaction();
+		UserDetails user = (UserDetails)session.get(UserDetails.class, id);
+		
+		tx.commit();
+		session.close();
+		return user;
+	}
+
+}

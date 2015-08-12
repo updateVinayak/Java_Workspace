@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+<fullyQualifiedTypeName name="AbstarctClass.AbstractClass"/>
+<fullyQualifiedTypeName name="com.basicJava.ServiceImpl"/>
+<fullyQualifiedTypeName name="com.basicJava.IService2"/>
+<fullyQualifiedTypeName name="java.lang.instrument.Instrumentation"/>
+<fullyQualifiedTypeName name="java.lang.Cloneable"/>
+<fullyQualifiedTypeName name="com.basicJava.IService"/>
+<fullyQualifiedTypeName name="com.basicJava.ServiceImpl2"/>
+<fullyQualifiedTypeName name="com.basicJava.Employee"/>
+</qualifiedTypeNameHistroy>

@@ -1,0 +1,10 @@
+package com.spring4.rest;
+
+public class PersonServiceImpl implements IPersonService {
+
+	public Person getPersonDetail(Integer id) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

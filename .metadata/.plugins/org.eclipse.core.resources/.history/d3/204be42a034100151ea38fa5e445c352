@@ -1,0 +1,57 @@
+package com.myHealth.service;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
+
+import com.myHealth.dao.IUserDAO;
+import com.myHealth.model.UserDetailsBO;
+import com.myHealth.model.data.UserDetails;
+
+@Component
+public class UserServiceImpl implements IUserService{
+	
+	@Autowired
+	private IUserDAO userDAO;
+
+	public IUserDAO getUserDAO() {
+		return userDAO;
+	}
+
+	public void setUserDAO(IUserDAO userDAO) {
+		this.userDAO = userDAO;
+	}
+
+	public List<UserDetailsBO> getAllUser() {
+		
+		
+		List<UserDetails> detailsDOs = userDAO.getAllUsers();
+		
+		System.out.println(detailsDOs.size());
+		
+		List<UserDetailsBO> users = new ArrayList<UserDetailsBO>();
+		
+		UserDetailsBO userDetails = new UserDetailsBO();		
+		userDetails.setUserId(1);
+		userDetails.setFirstName("Vinayak");
+		userDetails.setLastName("Sawant");
+		userDetails.setEmail("optimistvinay@gmail.com");
+		
+		users.add(userDetails);
+		
+		return users;		
+	}
+
+	public UserDetailsBO getUserById(int id) {
+		UserDetailsBO userDetails = new UserDetailsBO();		
+		userDetails.setUserId(1);
+		userDetails.setFirstName("Vinayak");
+		userDetails.setLastName("Sawant");
+		userDetails.setEmail("optimistvinay@gmail.com");
+		
+		return userDetails;
+	}
+
+}

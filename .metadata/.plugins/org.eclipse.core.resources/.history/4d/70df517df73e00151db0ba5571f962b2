@@ -1,0 +1,5 @@
+package com.myHealth.model;
+
+public class UserDetails {
+
+}
