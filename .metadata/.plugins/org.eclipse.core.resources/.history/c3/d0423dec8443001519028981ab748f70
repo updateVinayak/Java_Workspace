@@ -1,0 +1,14 @@
+package com.myHealth.dao;
+
+import java.util.List;
+
+import com.myHealth.model.data.StateDetails;
+
+public class MasterDAOImpl implements IMasterDAO {
+
+	public List<StateDetails> getAllStates() {
+		
+		return null;
+	}
+
+}

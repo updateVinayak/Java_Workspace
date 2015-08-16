@@ -47,11 +47,16 @@ public class UserDetails {
     @JsonBackReference
     private UserDetails parent;
 
+
+    @OneToMany(mappedBy="parent")
+    private Set<UserDetails> children = new HashSet<UserDetails>();
     
+    
+    /*
     @OneToMany(mappedBy="parent", fetch=FetchType.EAGER)
     @JsonManagedReference
     private Set<UserDetails> children = new HashSet<UserDetails>();
-    
+    */
     
 	public Integer getUserId() {
 		return userId;

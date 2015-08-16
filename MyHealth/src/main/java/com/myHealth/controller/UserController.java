@@ -12,6 +12,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 
+import com.myHealth.model.User;
 import com.myHealth.model.data.UserDetails;
 import com.myHealth.model.exception.MyHealthException;
 import com.myHealth.service.IUserService;
@@ -39,8 +40,8 @@ public class UserController {
 	@RequestMapping(value = "/{id}", method = RequestMethod.GET, produces = "application/json")
 	public ResponseEntity<?> getUserById(@PathVariable int id) {
 		
-		UserDetails user =  userService.getUserById(id);
-		return new ResponseEntity<UserDetails>(user, HttpStatus.OK);
+		User user =  userService.getUserById(id);
+		return new ResponseEntity<User>(user, HttpStatus.OK);
 		/*if (1 == id) {
 
 			UserDetails userDetails = getUserService().getUserById(id);

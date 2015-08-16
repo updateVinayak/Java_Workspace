@@ -6,6 +6,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
 import com.myHealth.dao.IUserDAO;
+import com.myHealth.model.User;
 import com.myHealth.model.data.UserDetails;
 
 @Component
@@ -32,7 +33,7 @@ public class UserServiceImpl implements IUserService{
 		return detailsDOs;		
 	}
 
-	public UserDetails getUserById(int id) {
+	public User getUserById(int id) {
 		
 		return userDAO.getUser(id);
 	}

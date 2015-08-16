@@ -2,6 +2,7 @@ package com.myHealth.dao;
 
 import java.util.List;
 
+import com.myHealth.model.User;
 import com.myHealth.model.data.UserDetails;
 
 public interface IUserDAO {
@@ -10,6 +11,6 @@ public interface IUserDAO {
 	
 	public Integer saveUser(UserDetails user);
 
-	public UserDetails getUser(Integer id);
+	public User getUser(Integer id);
 	
 }

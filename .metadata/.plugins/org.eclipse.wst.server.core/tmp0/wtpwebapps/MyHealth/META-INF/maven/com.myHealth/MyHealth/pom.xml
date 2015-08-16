@@ -139,7 +139,11 @@
             <version>1.4</version>
         </dependency>
         
-        
+		<dependency>
+            <groupId>org.hibernate</groupId>
+            <artifactId>hibernate-ehcache</artifactId>
+            <version>3.6.3.Final</version>
+        </dependency>        
     </dependencies>
   
   <build>

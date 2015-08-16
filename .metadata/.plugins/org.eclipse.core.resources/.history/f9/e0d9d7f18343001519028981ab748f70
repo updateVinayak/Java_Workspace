@@ -1,0 +1,20 @@
+package com.myHealth.controller;
+
+import java.util.List;
+
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+import com.myHealth.model.data.StateDetails;
+
+
+@RestController
+public class MasterController {
+
+	public List<StateDetails> getAllState(){
+		
+		
+		
+	}
+	
+}

@@ -1,15 +1,22 @@
 package com.myHealth.model.data;
 
+import java.util.HashSet;
+import java.util.Set;
+
 import javax.persistence.CascadeType;
 import javax.persistence.Column;
 import javax.persistence.Entity;
+import javax.persistence.FetchType;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
+import javax.persistence.OneToMany;
 import javax.persistence.OneToOne;
 import javax.persistence.Table;
+
+import com.fasterxml.jackson.annotation.JsonManagedReference;
 
 @Entity
 @Table(name="MH_DOCTOR")
@@ -19,13 +26,26 @@ public class DoctorDetails {
 	@GeneratedValue(strategy=GenerationType.AUTO)
 	@Column(name="Doctorid")
 	private Integer doctorId;
+
 	
+	private String firstName;
+	
+	private String middleName;
+	
+	private String lastName;
+	
+	private String email;
 	
 	@ManyToOne(cascade = CascadeType.ALL)
     @JoinColumn(name="HOMEADDRESSID")
 	private AddressDetails homeAddress;
 	
 	private String degree;
+
+	
+	@OneToMany(mappedBy="doctorDetails")
+    private Set<UserDetails> patients = new HashSet<UserDetails>();
+	
 	
 	@ManyToOne(cascade = CascadeType.ALL)
     @JoinColumn(name="CLINICADDRESSID")
@@ -65,6 +85,45 @@ public class DoctorDetails {
 		this.clinicAddress = clinicAddress;
 	}
 
+	public String getFirstName() {
+		return firstName;
+	}
+
+	public void setFirstName(String firstName) {
+		this.firstName = firstName;
+	}
+
+	public String getMiddleName() {
+		return middleName;
+	}
+
+	public void setMiddleName(String middleName) {
+		this.middleName = middleName;
+	}
+
+	public String getLastName() {
+		return lastName;
+	}
+
+	public void setLastName(String lastName) {
+		this.lastName = lastName;
+	}
+
+	public String getEmail() {
+		return email;
+	}
+
+	public void setEmail(String email) {
+		this.email = email;
+	}
+
 	
+	public Set<UserDetails> getPatients() {
+		return patients;
+	}
+
+	public void setPatients(Set<UserDetails> patients) {
+		this.patients = patients;
+	}
 	
 }

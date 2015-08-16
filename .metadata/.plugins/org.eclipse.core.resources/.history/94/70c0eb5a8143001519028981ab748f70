@@ -1,0 +1,5 @@
+package com.myHealth.service;
+
+public interface IMasterService {
+
+}

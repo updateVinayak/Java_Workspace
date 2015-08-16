@@ -36,6 +36,13 @@ public class AppConfig {
 		Properties pro = new Properties();		
 		pro.setProperty("dialect", "org.hibernate.dialect.Oracle10gDialect");
 		pro.setProperty("show_sql", "true");
+		pro.setProperty("format_sql", "true");
+		
+		pro.setProperty("hibernate.cache.use_second_level_cache","true");
+		pro.setProperty("hibernate.cache.use_query_cache","true");
+		pro.setProperty("hibernate.cache.provider_class", "org.hibernate.cache.EhCacheProvider");
+		
+		
 		
 		sessionFactory.setHibernateProperties(pro);
 		

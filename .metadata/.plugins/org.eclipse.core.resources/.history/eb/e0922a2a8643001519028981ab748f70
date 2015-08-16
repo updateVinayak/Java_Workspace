@@ -1,0 +1,24 @@
+package com.myHealth.service;
+
+import java.util.List;
+
+import org.springframework.stereotype.Component;
+
+import com.myHealth.dao.IMasterDAO;
+import com.myHealth.model.data.StateDetails;
+
+@Component
+public class MasterServiceImpl implements IMasterService {
+
+	
+	private IMasterDAO masterDAO; 
+	
+	
+	public List<StateDetails> getAllState() {
+
+		
+		
+		return null;
+	}
+
+}

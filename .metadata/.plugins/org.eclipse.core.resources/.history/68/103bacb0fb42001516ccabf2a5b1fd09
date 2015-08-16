@@ -1,0 +1,21 @@
+package com.myHealth.model;
+
+import com.myHealth.model.data.AddressDetails;
+
+public class Doctor {
+
+	private Integer doctorId;
+
+	private String firstName;
+
+	private String middleName;
+
+	private String lastName;
+
+	private String email;
+	
+	private Address homeAddress;
+	
+	private Address homeAddress;
+
+}

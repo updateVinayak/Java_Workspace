@@ -1,0 +1,16 @@
+package com.myHealth.service;
+
+import java.util.List;
+
+import com.myHealth.model.data.StateDetails;
+
+public class MasterServiceImpl implements IMasterService {
+
+	public List<StateDetails> getAllState() {
+
+		
+		
+		return null;
+	}
+
+}

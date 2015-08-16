@@ -1,0 +1,10 @@
+package com.myHealth.model.data;
+
+import javax.persistence.Entity;
+import javax.persistence.Table;
+
+@Entity
+@Table(value="MH_STSTEDETAILS")
+public class StateDetails {
+
+}
